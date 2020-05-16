@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+ 
+    <style>
+      body{ padding-top: 50px;}
+      
+    </style>
+     <%- include('head.ejs') %>
+ 
+</head>
+
+<body class="container">
+    <header>
+        <%- include('header.ejs') %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>Articles Delete</h1>
+        </div>
+    </main>
+   
+     <div class="card" style="width:auto;">
+        <div class="card-body">
+          <h4 class="card-title"><%= article.title %></h5>
+          <h5 class="card-subtitle mb-2 text-muted"><%= article.author %></h6>
+          <p class="card-text"><%= article.body %></p>
+
+          
+           <a href="/delete/<%= article._id %>" class="btn btn-danger">Delete</a>
+        
+
+        </div>
+      </div>
+ 
+
+      
+</body>
+</html>
