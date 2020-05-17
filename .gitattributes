@@ -1,5 +1,6 @@
 *.node linguist-detectable=true
 *.js linguist-detectable=true
 *.html linguist-detectable=false
+*.css linguist-detectable=false
 *.xml linguist-detectable=false
 *.php linguist-language=node
